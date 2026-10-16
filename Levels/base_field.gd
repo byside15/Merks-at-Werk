@@ -82,8 +82,7 @@ func _on_spawn_timer_timeout() -> void:
 	print("Booyakasha! gp = ", missile.global_position, ", edge = ", edge_pos)
 	spawn_timer.start()
 
-"""This function can be overriden per field.
-For example, Level 1, Field 1 automatically ends after 30 seconds."""
+
 func _check_all_stations_destroyed():
 	print("Station count: ", get_tree().get_node_count_in_group("station"), ", Destroyed count: ", get_tree().get_node_count_in_group("destroyed"))
 	if (
@@ -94,7 +93,8 @@ func _check_all_stations_destroyed():
 		await get_tree().create_timer(2.5).timeout
 		field_clear.emit()
 
-
+"""This function can be overriden per field.
+For example, Level 1, Field 1 automatically ends after 30 seconds."""
 #normally bad things should happen if the timer clears
 # before the player completes the level
 func _on_field_timer_timeout() -> void:
