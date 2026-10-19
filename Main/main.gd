@@ -67,4 +67,3 @@ func create_sprite_copy(entity: Node2D, offset: Vector2) -> void:
 	
 	# Move copy to corresponding side of map.
 	#sprite_copy.global_position += offset
-	print("HEY!")

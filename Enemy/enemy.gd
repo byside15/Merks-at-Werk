@@ -100,7 +100,7 @@ func get_sprite():
 	return $Sprite
 	
 func get_sprites():
-	return $mecha.get_children()
+	return $Mecha.get_children()
 	
 func _on_despawn_timer_timeout() -> void:
 	explode()
