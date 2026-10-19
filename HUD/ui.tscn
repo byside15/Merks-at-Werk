@@ -206,3 +206,8 @@ offset_right = 384.0
 offset_bottom = 433.99997
 color = Color(1, 0, 0, 1)
 metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1033772571]
+offset_right = 40.0
+offset_bottom = 13.0
+text = "Time: "
